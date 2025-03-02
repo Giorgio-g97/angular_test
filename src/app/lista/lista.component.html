@@ -1,0 +1,31 @@
+<h1>Sono il componente Lista:</h1>
+
+<ul>
+  <li *ngFor="let el of lista">
+    {{ el }}
+    <!-- {{}} output variabile -->
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th>Matricola</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let el of studenti"> <!-- Mettiamo qui per iterare il td -->
+      <td>
+        {{ el.nome }}
+      </td>
+      <td>
+        {{ el.cognome }}
+      </td>
+      <td>
+        {{ el.matr }}
+      </td>
+    </tr>
+  </tbody>
+</table>
